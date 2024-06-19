@@ -25,7 +25,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @EnableDubbo
 public class ProviderApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(ProviderApplication.class, args);
+//测试优雅停机
+//        Thread.sleep(1000l);
+//        System.exit(0);
     }
 }
